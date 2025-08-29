@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+    color: #212529;
+    background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+h2 {
+    border-left: 5px solid #0d6efd;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important; 
+}
+
+
+
+#about img {
+    max-width: 250px;
+    border: 5px solid #fff;
+}
+
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+
+footer {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.edu-card {
+    position: relative;
+    overflow: hidden;
+    height: 200px; 
+    transition: height 0.3s ease-in-out;
+    background: #222;
+    color: #fff;
+}
+
+.edu-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: var(--bg-img); 
+    background-size: contain;        
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 0;
+}
+
+
+.edu-card.hovered {
+    height: 300px; 
+}
+
+.edu-card.hovered::before {
+    opacity: 1;
+}
+
+.edu-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.rounded-square {
+  border-radius: 15px;
+}
+
+.hobby-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #ffc107;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #f8f9fa !important;
+}
